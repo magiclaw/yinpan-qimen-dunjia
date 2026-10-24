@@ -1,0 +1,39 @@
+{
+  "name": "yinpan-qimen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5188 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5188 --strictPort",
+    "test": "node scripts/verify-engine.mjs"
+  },
+  "dependencies": {
+    "lunar-typescript": "1.8.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "vite": "6.4.1"
+  },
+  "description": "阴盘奇门遁甲排盘 · Yinpan Qimen Dunjia chart calculator by 若轩 / 轩辕国学",
+  "author": "若轩",
+  "homepage": "https://qimen.aifashou.cn/",
+  "keywords": [
+    "阴盘奇门遁甲排盘",
+    "奇门排盘",
+    "qimen",
+    "qimen-dunjia",
+    "yinpan-qimen",
+    "chinese-calendar"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magiclaw/yinpan-qimen-dunjia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/magiclaw/yinpan-qimen-dunjia/issues"
+  }
+}

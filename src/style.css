@@ -1,0 +1,37 @@
+:root { color-scheme: light; font-family: Arial, "Microsoft YaHei", sans-serif; color: #000; background: #fff; }
+body { margin: 16px; }
+main { max-width: 600px; }
+h1 { font-size: 24px; margin: 20px 0; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+form > p { margin: 18px 0; }
+.field { display: block; margin-bottom: 6px; }
+input[type="datetime-local"] { max-width: 100%; box-sizing: border-box; }
+textarea { display: block; width: 300px; max-width: 100%; box-sizing: border-box; }
+fieldset { margin: 18px 0; padding: 10px; }
+fieldset p { margin: 8px 0; }
+input[type="number"] { width: 95px; }
+.error { border: 1px solid #000; padding: 8px; }
+/* Result layout follows the original chart: abbreviated symbols and outer lead stems. */
+.result-header { display: flex; align-items: center; gap: 20px; margin: 20px 0; }
+.result-header h1 { margin: 0; }
+.result-header a { color: #555; font-size: 14px; }
+.meta { font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.meta p { margin: 4px 0; }
+.board-space { padding: 40px 40px; }
+.board-wrap { width: 100%; max-width: 360px; margin: 0 auto; position: relative; font-size: 18px; line-height: 1; }
+.board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #222; border-left: 1px solid #222; }
+.palace { position: relative; aspect-ratio: 1; border-right: 1px solid #222; border-bottom: 1px solid #222; }
+.deity { position: absolute; left: 9px; top: 9px; }
+.void { position: absolute; right: 7px; top: 7px; font-size: 14px; }
+.middle { position: absolute; left: 9px; right: 9px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; justify-content: space-between; }
+.earth-stem { position: absolute; left: 9px; bottom: 9px; }
+.gate { position: absolute; right: 9px; bottom: 9px; }
+.outer-stem, .horse { position: absolute; white-space: nowrap; }
+.horse { color: #c00; }
+@media (max-width: 420px) {
+  body { margin: 12px; }
+  .board-space { padding: 36px 35px; }
+  .board-wrap { max-width: 286px; font-size: 16px; }
+  .meta { font-size: 13px; }
+}
